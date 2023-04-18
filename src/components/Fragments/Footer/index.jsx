@@ -4,17 +4,14 @@ export default function Footer() {
   return (
     <footer className="bg-base-200 text-base-content">
       <div className="container">
-        <div className="flex justify-between p-10 ">
+        <div className="flex flex-col md:flex-row justify-between p-10 ">
           <div>
-            {/* <Button classname="btn btn-ghost normal-case text-primary text-2xl font-bold">
-            Libra<span className="text-secondary">ries</span>
-          </Button> */}
             <p className="text-primary font-bold text-2xl">
               Libra<span className="text-secondary">ries</span>
             </p>
             <p className="text-gray-600">Is the best place to buy a book.</p>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col my-10 md:my-0">
             <span className="footer-title">Company</span>
             <a className="link link-hover">About us</a>
             <a className="link link-hover">Contact</a>

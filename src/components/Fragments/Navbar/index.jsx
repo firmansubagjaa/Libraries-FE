@@ -93,7 +93,7 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="navbar-end">
-            <Button classname="btn-link no-underline">Login</Button>
+            <Button classname="btn-link no-underline hidden md:flex">Login</Button>
             {/* <Button className="btn btn-secondary">Sign Up</Button> */}
             <button className="btn btn-secondary rounded-full">Sign Up</button>
           </div>

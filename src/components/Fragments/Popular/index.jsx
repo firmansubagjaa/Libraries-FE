@@ -17,7 +17,7 @@ export default function PopularSection() {
         {[1, 2, 3, 4, 5].map(() => {
           return (
             <div className="carousel-item">
-              <Card title="Seni Berbicara" author="Baginda Raja" classname="border-2 w-44" />
+              <Card title="Seni Berbicara" author="Baginda Raja" classname="border-2 w-44 mr-5 xl:mr-0" />
             </div>
           );
         })}

@@ -29,13 +29,11 @@ export default function Hero() {
       >
         <SwiperSlide className="w-screen container mt-10">
           <div className="hero min-h-screen bg-base-200 rounded-3xl">
-            <div className="flex justify-between items-center flex-col lg:flex-row-reverse">
-              <img src={hero} className="max-w-sm" />
-              <div>
-                <h1 className="text-5xl font-bold">
-                  Book is a <br /> window to the world
-                </h1>
-                <p className="py-6">wake up your dream by reading a book every day.</p>
+            <div className="flex justify-between items-center flex-col lg:flex-row-reverse xl:p-20">
+              <img src={hero} className="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl pt-16" />
+              <div className="px-7 my-14">
+                <h1 className="text-3xl sm:text-3xl xl:text-5xl xl:pr-32 font-bold">Book is a window to the world</h1>
+                <p className="py-6 ">wake up your dream by reading a book every day.</p>
                 <button className="btn btn-secondary">Read now</button>
               </div>
             </div>

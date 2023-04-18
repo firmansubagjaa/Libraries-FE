@@ -8,13 +8,13 @@ import Footer from "../../components/Fragments/Footer";
 
 export default function Home() {
   return (
-    <>
+    <main className="relative">
       <Navbar />
       <Hero />
       <PopularSection />
       <LatestBooks />
       <Subscribe />
       <Footer />
-    </>
+    </main>
   );
 }
