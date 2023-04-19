@@ -34,33 +34,43 @@ export default function FormRegister() {
       <div className="flex justify-center pt-10">
         <Heading2 classname="text-2xl font-bold text-primary">Sign Up</Heading2>
       </div>
-      <form onSubmit={formik.handleSubmit} className="w-full flex flex-col ml-16 xl:ml-2 container my-10">
-        <InputForms htmlfor="fullname" title="Fullname" type="text" name="fullname" id="fullname" placeholder='exp: "Jhon Elix"' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.fullname} />
-        {formik.touched.fullname && formik.errors.fullname ? <div className="text-red-600 mb-3">{formik.errors.fullname}</div> : null}
+      <form onSubmit={formik.handleSubmit} className="w-full flex flex-col items-center container my-10">
+        <div className="w-full mb-3">
+          <InputForms htmlfor="fullname" title="Fullname" type="text" name="fullname" id="fullname" placeholder='exp: "Jhon Elix"' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.fullname} />
+          {formik.touched.fullname && formik.errors.fullname ? <div className="text-red-600">{formik.errors.fullname}</div> : null}
+        </div>
 
-        <InputForms htmlfor="email" title="Email" type="email" name="email" id="email" placeholder="your email" classname="" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
-        {formik.touched.email && formik.errors.email ? <div className="text-red-600 mb-3">{formik.errors.email}</div> : null}
+        <div className="w-full mb-3">
+          <InputForms htmlfor="email" title="Email" type="email" name="email" id="email" placeholder="your email" classname="" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
+          {formik.touched.email && formik.errors.email ? <div className="text-red-600">{formik.errors.email}</div> : null}
+        </div>
 
-        <InputForms htmlfor="password" title="Password" type="password" name="password" id="password" placeholder="******" classname="" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password} />
+        <div className="w-full mb-3">
+          <InputForms htmlfor="password" title="Password" type="password" name="password" id="password" placeholder="******" classname="" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password} />
 
-        {formik.touched.password && formik.errors.password ? <div className="text-red-600 mb-3">{formik.errors.password}</div> : null}
+          {formik.touched.password && formik.errors.password ? <div className="text-red-600">{formik.errors.password}</div> : null}
+        </div>
 
-        <InputForms
-          htmlfor="confirmPassword"
-          title="Confirm Password"
-          type="password"
-          name="confirmPassword"
-          id="confirmPassword"
-          placeholder="******"
-          className=""
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          value={formik.values.confirmPassword}
-        />
+        <div className="w-full mb-3">
+          <InputForms
+            htmlfor="confirmPassword"
+            title="Confirm Password"
+            type="password"
+            name="confirmPassword"
+            id="confirmPassword"
+            placeholder="******"
+            className=""
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.confirmPassword}
+          />
 
-        {formik.touched.confirmPassword && formik.errors.confirmPassword ? <div className="text-red-600 mb-3">{formik.errors.confirmPassword}</div> : null}
+          {formik.touched.confirmPassword && formik.errors.confirmPassword ? <div className="text-red-600">{formik.errors.confirmPassword}</div> : null}
+        </div>
 
-        <Button classname="mt-3 btn-secondary shadow-2xl">Register</Button>
+        <div className="w-full mt-3">
+          <Button classname="mt-3 btn-secondary btn-block shadow-2xl">Register</Button>
+        </div>
       </form>
     </>
   );

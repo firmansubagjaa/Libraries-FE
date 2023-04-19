@@ -19,7 +19,9 @@ export default function Navbar() {
               </label>
               <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
-                  <Button variant="ghost">Home</Button>
+                  <Button variant="ghost" to={"/"}>
+                    Home
+                  </Button>
                 </li>
                 <li tabIndex={0}>
                   <Button variant="ghost" className="justify-between">
@@ -52,15 +54,17 @@ export default function Navbar() {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 font-semibold text-primary">
               <li>
-                <Button variant="ghost">Home</Button>
+                <Button to="/" variant="ghost">
+                  Home
+                </Button>
               </li>
 
               {/* dropdown */}
-              <div className="dropdown dropdown-bottom">
-                <label tabIndex={0} className="btn btn-ghost rounded-btn">
+              <div className="dropdown dropdown-hover">
+                <Button to="/product" tabIndex={0} classname="btn btn-ghost rounded-btn">
                   Category
-                </label>
-                <ul tabIndex={0} className="menu dropdown-content p-2 bg-base-100 rounded-box w-[36rem] mt-4 shadow-2xl">
+                </Button>
+                <ul tabIndex={0} className="menu dropdown-content p-2 bg-base-100 rounded-box w-[36rem] mt-1 shadow-2xl">
                   <div className="flex">
                     <div className="border-r border-solid border-gray-300 w-[17rem] flex flex-col">
                       <li>
