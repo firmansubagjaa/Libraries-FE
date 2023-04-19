@@ -2,6 +2,7 @@ import React from "react";
 
 import hero from "../../../assets/svg/hero.svg";
 import Image from "../../Elements/Image";
+import FormLogin from "../FormLogin";
 
 export default function HeroAuth(props) {
   const { children, alt } = props;
@@ -10,10 +11,10 @@ export default function HeroAuth(props) {
     <>
       <div className="h-screen">
         <div className="flex">
-          <div className="flex bg-base-200 justify-center items-center min-h-screen w-[46vw]">
-            <Image src={hero} alt={alt} />
+          <div className="hidden md:flex bg-base-200 justify-center items-center min-h-screen">
+            <Image src={hero} alt={alt} classname="w-screen p-28" />
           </div>
-          <div>{children}</div>
+          <div className="flex flex-col justify-center w-screen">{children}</div>
         </div>
       </div>
     </>

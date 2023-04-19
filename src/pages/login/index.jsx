@@ -8,10 +8,7 @@ export default function Login() {
   return (
     <>
       <AuthLayout>
-        {/* <InputForms htmlFor="email" id="email" type="email" placeholder="example@email.com" /> */}
-        <div className="flex flex-col justify-center items-center">
-          <FormLogin htmlFor="email" title="Email" id="email" type="email" placeholder="example@email.com" />
-        </div>
+        <FormLogin />
       </AuthLayout>
     </>
   );

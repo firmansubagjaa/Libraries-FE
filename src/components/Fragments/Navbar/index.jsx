@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../Elements/button";
 import Card from "../Card";
+import { Link } from "react-router-dom";
 
 // import galaxy from "@/assets/webp/galaxy.webp";
 
@@ -85,7 +86,9 @@ export default function Navbar() {
               {/* end */}
 
               <li>
-                <Button variant="ghost">Your Cart</Button>
+                <Button variant="ghost" to="/your-cart">
+                  Your Cart
+                </Button>
               </li>
               <li>
                 <Button variant="ghost">History</Button>
@@ -93,7 +96,11 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="navbar-end">
-            <Button classname="btn-link no-underline hidden md:flex">Login</Button>
+            {/* <Link to={`/login`}> */}
+            <Button classname="btn-link no-underline hidden md:flex" to="/login">
+              Login
+            </Button>
+            {/* </Link> */}
             {/* <Button className="btn btn-secondary">Sign Up</Button> */}
             <button className="btn btn-secondary rounded-full">Sign Up</button>
           </div>

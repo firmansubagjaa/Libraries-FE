@@ -7,7 +7,7 @@ export default function InputForms(props) {
 
   return (
     <>
-      <div className="form-control w-full max-w-xs">
+      <div className="form-control w-full max-w-md">
         <Label htmlFor={htmlFor} id={id}>
           {title}
         </Label>
