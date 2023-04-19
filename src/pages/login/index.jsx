@@ -7,7 +7,7 @@ import InputForms from "../../components/Elements/input";
 export default function Login() {
   return (
     <>
-      <AuthLayout>
+      <AuthLayout buttonTitle="Sign Up" to={"/register"}>
         <FormLogin />
       </AuthLayout>
     </>

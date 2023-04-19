@@ -8,7 +8,7 @@ export default function FormLogin() {
   return (
     <>
       <div className="flex justify-center pt-10">
-        <Heading2 classname="text-2xl font-bold text-primary">Login</Heading2>
+        <Heading2 classname="text-2xl font-bold text-primary">Sign In</Heading2>
       </div>
       <form className="w-full flex flex-col justify-center container my-10">
         <InputForms htmlfor="email" title="Email" type="email" name="email" id="email" placeholder="your email" classname="" />
