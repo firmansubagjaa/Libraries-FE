@@ -12,7 +12,7 @@ export default function AuthLayout(props) {
   return (
     <>
       <HeroAuth>
-        <div className="mt-2 flex justify-between container">
+        <div className="mt-2 flex justify-between container py-5">
           <Button classname="-ml-4 btn-ghost normal-case text-primary text-2xl font-bold" to="/">
             Libra<span className="text-secondary">ries</span>
           </Button>

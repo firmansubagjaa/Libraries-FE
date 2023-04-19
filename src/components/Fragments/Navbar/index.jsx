@@ -96,13 +96,12 @@ export default function Navbar() {
             </ul>
           </div>
           <div className="navbar-end">
-            {/* <Link to={`/login`}> */}
             <Button classname="btn-link no-underline hidden md:flex" to="/login">
               Login
             </Button>
-            {/* </Link> */}
-            {/* <Button className="btn btn-secondary">Sign Up</Button> */}
-            <button className="btn btn-secondary rounded-full">Sign Up</button>
+            <Button classname="btn-secondary rounded-full shadow-2xl" to="/register">
+              Sign Up
+            </Button>
           </div>
         </div>
       </div>

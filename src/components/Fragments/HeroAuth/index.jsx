@@ -9,12 +9,12 @@ export default function HeroAuth(props) {
 
   return (
     <>
-      <div className="h-screen">
+      <div className="">
         <div className="flex">
-          <div className="hidden md:flex bg-base-200 justify-center items-center min-h-screen">
+          <div className="hidden md:flex bg-base-200 justify-center min-h-[150vh]">
             <Image src={hero} alt={alt} classname="w-screen p-28" />
           </div>
-          <div className="flex flex-col justify-center w-screen">{children}</div>
+          <div className="w-screen">{children}</div>
         </div>
       </div>
     </>
